@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var index_1 = require("./index");
+var engine = new index_1.Engine.Engine();
+engine.start();
+engine.start();
+engine.stop();
+engine.stop();
+engine.failed();
+engine.start();
+engine.stop();
+engine.repare();
+engine.start();

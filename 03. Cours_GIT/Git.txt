@@ -1,0 +1,57 @@
+Installer Git
+
+git init //Initialiser un dossier dans la console cd ...  
+git status //permet de voir les modifications entre le pc et git
+git add * // permet d'ajouter les fichiers au git
+git commit -m // permet de commit (-m est obligatoire c'est un message apporter au commit)
+git log // permet de voir tout les commits effectuer.
+git clone // permet de cloner un depos git vers un nouveau repertoire
+git revert idCommit // permet de revenir en arriere du commit choisie
+git diff idCommit1 idCommit1 // permet de voir la difference entre deux commit
+git checkout -- nomdufichier // Permet de revenir en arriere uniquement sur le fichier git
+git add -p nomdufichier // permet de modifier avant commit pour commenter ce qu'on veux pas suivre => e pour editer
+git rm // supprime un fichier dans le dossier et dans staging area de git
+git rm --cached // permet de plus suivre dans git mais ne le supprime pas
+git tag // permet de cree des tag
+.gitignore // permet de cree un fichier qui va inumerer les fichiers qu'on souhaite ignorer
+
+git branch nomBranch // permet de cree une branch
+git checkout nomBranch // permet de switch sur la branch
+git checkout -b nomBranch // Cree et switch
+git branch -d nomBranch // supprimer branch
+
+git reset --hard HEAD // permet de reset le commit
+
+git push // utilise la commande qu'il te propose !Verifier la branch avec git status ou branch
+git push -f //force le push
+
+git merge nomBranch // permet d'ajouter le contenue de la branch dans le main
+git rebase nomBranch -i // permet de mettre a jour la branch actuelle avec le main
+
+git pull // met a jour la branch main
+
+git stash //permet de mettre de coter la modification. !regader plus en detail
+
+git reset --hard HEAD //Supprime tout et retourne a la branch initial.
+
+
+--------------REMOTE---------------
+
+git remote set-url origin https://github.com/MiL-Dev/Diginamic-Java //Permet de reconfigurer l'url pour le remote
+
+
+
+
+
+
+
+
+------------CONFLIT----------
+git checkout main // permet de revenir sur le main
+git pull // permet de mettre a jour la branch main
+git checkout - //permet de revenir sur sa branch dev
+git rebase main -i //permet de remettre a jour depuis le main (i mode interactif qui permet quel commit vont etre appliquer) 
+git rebase --abort // permet d'annuler le rebase
+git rebase --continue // Une fois accepter toutes les modification
+git push -f //push et ecrase les commits present sur la branch
+

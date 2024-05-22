@@ -1,0 +1,32 @@
+package java.ex1;
+
+/**
+ * Classe qui fournir des services de calcul sur les nombres entiers
+ * 
+ * @author RichardBONNAMY
+ *
+ */
+public class Calcul {
+
+	/**
+	 * Retourne l'addition de 2 entiers
+	 * 
+	 * @param a premier entier
+	 * @param b second entier
+	 * @return int
+	 */
+	public static int additionner(int a, int b) {
+		return a + b;
+	}
+
+	/**
+	 * Retourne la soustraction de 2 entiers
+	 * 
+	 * @param a premier entier
+	 * @param b second entier
+	 * @return int
+	 */
+	public static int soustraire(int a, int b) {
+		return a - b;
+	}
+}

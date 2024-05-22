@@ -1,0 +1,64 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "ed42a2d393650165b737216b5fe85c40",
+      "css": "volume-control-phone",
+      "code": 62112,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3e674995cacc2b09692c096ea7eb6165",
+      "css": "megaphone",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "cfaa8fbbdcc7bb8d636cb974aad1f9b9",
+      "css": "glass",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "css": "github",
+      "code": 62208,
+      "src": "entypo"
+    },
+    {
+      "uid": "91daf8fde1042a363514ca7e42d89570",
+      "css": "github-circled",
+      "code": 62209,
+      "src": "entypo"
+    },
+    {
+      "uid": "5bbd46b2a0b972533f4d3ef243645e1d",
+      "css": "flickr-circled",
+      "code": 62212,
+      "src": "entypo"
+    },
+    {
+      "uid": "3c2cfcbad5062929d63a249f3858e38b",
+      "css": "github-circled-alt",
+      "code": 61523,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "33cea6d7bd699348c0d593e105361a51",
+      "css": "facebook-circled",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "ae8492c61cce60c36ed9667680017e7d",
+      "css": "lastfm-circled",
+      "code": 59394,
+      "src": "typicons"
+    }
+  ]
+}

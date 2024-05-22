@@ -1,0 +1,11 @@
+package fr.diginamic.numeration;
+
+public enum Saison {
+	PRINTEMPS,
+	ETE,
+	AUTOMNE,
+	HIVER;
+	private String name;
+	
+	private
+}

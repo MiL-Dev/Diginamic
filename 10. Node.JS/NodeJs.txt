@@ -1,0 +1,37 @@
+NodeJS
+
+Start Project
+	
+	- npm init //installer les paquets Necessaire pour les projets NodeJS (-y permet de mettre oui a tout)
+	- npm run nomVarible //lancer les commandes de scripts \ dans le fichier package.json il y a toutes les commandes
+		scripts: { 
+			"test2": "echo \"test console\"" // ici mettre le text entre \" \"
+			}
+	- npm install //permet d'insttaler toutes les dependences
+	- npm install express //librairy pour code en back end
+	- npm r depencies // supprimer 
+	- npm i nodemon -D // nodemon fait node "nomdufichierIndex'permet d'installer des dependences pour devellopeur
+	- npm ci //permet d'installer depuis le fichier package-lock
+	
+	node nomdefichier // permet de lire le contenue js
+	node . // Permet de chercher un index.js et de l'execute
+
+	Lancer le serveur 
+
+
+
+
+
+
+//DEPENDENCE
+	- npm install express //librairy pour code en back end
+	- ... nodemon //permet
+
+
+
+
+
+//Script
+	"scripts" {
+		"dev": "nodemon index.js" // cette commande va permettre d'utiliser la commande dev et de lancer nodemon qui execute index.js
+	},

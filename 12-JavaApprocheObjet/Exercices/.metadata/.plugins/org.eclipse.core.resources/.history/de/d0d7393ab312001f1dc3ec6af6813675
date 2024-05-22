@@ -1,0 +1,14 @@
+package utils;
+
+public class StringUtils {
+	
+	public static StringBuilder sBuilder(String...strings) {
+		
+		StringBuilder builder = new StringBuilder();
+		for(String str : strings) {
+			builder.append(str);
+		}
+		
+		return builder;
+	}
+}

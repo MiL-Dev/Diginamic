@@ -1,0 +1,7 @@
+@import "./variable";
+body{
+    background-color: $warning;
+    p{
+        background-color: white;
+    }
+}

@@ -1,0 +1,20 @@
+#picture{
+    width: 20rem;
+}
+#dw {
+    width: 20rem;
+}
+footer { 
+    a>img{
+        width: 5rem;    
+    }
+}
+footer>nav { 
+    a>img{
+        width: 2rem;
+        transition: transform .3s ease-in-out;
+    }
+    a>img:hover{
+        transform: rotate(360deg);
+    }
+}

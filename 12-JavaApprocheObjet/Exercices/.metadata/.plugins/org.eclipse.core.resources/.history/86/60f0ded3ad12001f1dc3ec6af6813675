@@ -1,0 +1,21 @@
+package listes;
+
+public class TestEquals {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Ville v1 = new Ville("Nice", 5000);
+		Ville v2 = new Ville("Nice", 5000);
+		
+		
+		v1.equals(v2);
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

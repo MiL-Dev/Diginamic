@@ -1,0 +1,52 @@
+package fichier;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import fichier.Ville;
+
+public class LectureFichier {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		
+		Path path = Paths.get("C:\\Users\\MiL\\Developpement\\Formation_Diginamic\\12. Java approche objet\\TP\\recensement.csv");
+
+		boolean exists = Files.exists(path);
+		boolean estFichier = Files.isRegularFile(path);
+		boolean estLisible = Files.isReadable(path);
+		
+		System.out.println(exists);
+		System.out.println(estFichier);
+		System.out.println(estLisible);
+		List<String> lines = Files.readAllLines(path);
+		
+		
+		//Demander pourquoi cela ne fonctionne pas ! String error
+//		for(String line : lines) {
+//			for(int i=0; i<tokens.length; i++) {
+//				Arrays.copyOf(tokens , tokens.length + 1);
+//				tokens[i] = line.split(";");
+//			}
+//			
+//		}
+		ArrayList<Ville> cities = new ArrayList<>();
+		Iterator<String> iter = lines.iterator();
+		String line = iter.next();
+		int i = 0;
+		while (iter.hasNext()) {
+			System.out.println(i++);
+			line = iter.next();
+			String[] tokens = line.split(";");
+			//a cause de la corse departement 2A je ne l'es pas mis en int
+			Ville city = new Ville(tokens[6],tokens[2] , tokens[1], Integer.parseInt(tokens[9].replaceAll("\\s", "")));
+			cities.add(city);
+		}
+		System.out.println(cities.size());
+	}
+}

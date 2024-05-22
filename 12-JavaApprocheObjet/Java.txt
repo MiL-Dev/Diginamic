@@ -1,0 +1,4 @@
+------------RACCOURCI-------------------
+syso+CTRL+SPACE    // permet de cree la ligne println
+SHIFT+ALT+R        // Modifiers une variable de partout en meme temps(en selection)
+CTRL+SHIFT+o       // Fait toutes les imports 

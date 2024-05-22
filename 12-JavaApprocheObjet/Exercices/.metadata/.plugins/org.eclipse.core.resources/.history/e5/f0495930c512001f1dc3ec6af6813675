@@ -1,0 +1,12 @@
+package listes;
+
+public class TestContinentAvecEnum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Ville> cityList = new ArrayList<>();
+		Ville ville1 = new Ville("Nice",343000);
+		cityList.add(ville1);
+	}
+
+}

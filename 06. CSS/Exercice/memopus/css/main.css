@@ -1,0 +1,27 @@
+.flux_normal{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 5px 20px 50px;
+    border: 2px solid blue;
+    border-radius: 5px 10px 15px 20px;
+    overflow: scroll;
+}
+
+.flux_flottant{
+    float: right;
+    background-color: red;
+}
+.flux_absolute{
+    position: absolute;
+    top: -5px;
+    left: 60px;
+    width: 200px;
+    height: 200px;
+    background: green;
+    
+}
+.flux_relatif{
+    position: relative;
+}

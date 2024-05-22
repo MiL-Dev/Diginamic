@@ -1,0 +1,20 @@
+package listes;
+
+import java.util.ArrayList;
+
+public class TestContinentAvecEnum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Ville> cityList = new ArrayList<>();
+		Ville ville1 = new Ville("Paris",91, Continent.EUROPE);
+		Ville ville2 = new Ville("Paris",91, Continent.EUROPE);
+		Ville ville3 = new Ville("Paris",91, Continent.EUROPE);
+		Ville ville4 = new Ville("Paris",91, Continent.EUROPE);
+		Ville ville5 = new Ville("Paris",91, Continent.EUROPE);
+		Ville ville6 = new Ville("Paris",91, Continent.EUROPE);
+		
+		cityList.add(ville1);
+	}
+
+}

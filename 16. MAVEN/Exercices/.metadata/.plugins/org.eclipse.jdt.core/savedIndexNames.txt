@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+C:\Users\MiL\Developpement\Formation_Diginamic\16. MAVEN\Exercices\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3987704704.index

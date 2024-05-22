@@ -1,0 +1,45 @@
+.bgOrange{
+    display: flex;
+    position: absolute;
+    flex-direction: row; 
+    height: 340px;
+    width: 100%;
+    max-width: 960px;
+    z-index: -1;
+}
+.bgOrange article{
+    background-color: rgba(255, 179, 176, 0.39);
+    width: 100%;
+    margin: 0 9px;
+    justify-content: center;
+}
+.section {
+    display: flex;
+    margin: 0 10px;
+    max-width: 940px;
+    justify-content: space-between; /* L'espace restant va etre parterger entre les blocks */
+    flex-wrap: wrap;
+    
+}
+.section article{
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    margin: 0.5rem 0;
+    
+}
+.F940{
+    width: 940px;
+}
+.F540{
+    width: 540px;
+}
+.F380{
+    width: 380px;
+}
+.F220{
+    width: 220px;
+}
+.F300{
+    width: 300px;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <h1>Formulaire</h1>
+    </header>
+    <main>
+        <h2>Les formulaires</h2>
+        <p>Premier Form</p>
+        <form action="./01Form.html" method="GET">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <button type="submit">Envoyer</button>
+        </form>
+        <form action="/01Form.html" method="GET">
+            <ul>
+              <li>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">E-mail :</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message&nbsp;:</label>
+                <textarea id="msg" name="user_message">Veuillez ecrire ici</textarea>
+              </li>
+            </ul>
+          </form>
+          <form action="/01Form.html" method="GET">
+            <fieldset>
+              <legend>Taille du jus de fruits</legend>
+              <p>
+                <input type="radio" name="size" id="size_1" value="small" />
+                <label for="size_1">Petite</label>
+              </p>
+              <p>
+                <input type="radio" name="size" id="size_2" value="medium" />
+                <label for="size_2">Moyenne</label>
+              </p>
+              <p>
+                <input type="radio" name="size" id="size_3" value="large" />
+                <label for="size_3">Grande</label>
+              </p>
+            </fieldset>
+            <button type="submit">Envoyer</button>
+          </form>
+          <form action="/01Form.html" method="GET">
+            <p>
+              <label for="taste_1">J'aime les cerises</label>
+              <input type="checkbox" id="taste_1" name="taste_cherry" value="1" />
+            </p>
+            <p>
+              <label for="taste_2">J'aime les bananes</label>
+              <input type="checkbox" id="taste_2" name="taste_banana" value="2" />
+            </p>
+            <button type="submit">Envoyer</button>
+          </form>
+          <form action="/01Form.html" method="GET">
+          <section>
+            <h2>Informations de contact</h2>
+            <fieldset>
+              <legend>Qualité</legend>
+              <ul>
+                <li>
+                  <label for="title_1">
+                    <input type="radio" id="title_1" name="title" value="M." />
+                    Monsieur
+                  </label>
+                </li>
+                <li>
+                  <label for="title_2">
+                    <input type="radio" id="title_2" name="title" value="Mme." />
+                    Madame
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Nom&nbsp;: </span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="text" id="name" name="username" required />
+            </p>
+            <p>
+              <label for="mail">
+                <span>e-mail&nbsp;:</span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="email" id="mail" name="usermail" required />
+            </p>
+            <p>
+              <label for="pwd">
+                <span class="span">Mot de passe&nbsp;:</span>
+                <strong><span aria-label="required">*</span></strong>
+              </label>
+              <input type="password" id="pwd" name="password" required />
+            </p>
+          </section>
+          <button type="submit">Env</button>
+        </form>
+        <form action="" method="get">
+            <section>
+                <h2>Informations de paiement</h2>
+                <p>
+                  <label for="card">
+                    <span>Type de carte&nbsp;:</span>
+                  </label>
+                  <select id="card" name="usercard">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="amex">American Express</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="number">
+                    <span>Numéro de carte&nbsp;:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                  </label>
+                  <input type="tel" id="number" name="cardnumber" required />
+                </p>
+                <p>
+                  <label for="expiration">
+                    <span>Date d'expiration&nbsp;:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                  </label>
+                  <input
+                    type="text"
+                    id="expiration"
+                    required="true"
+                    placeholder="MM/YY"
+                    pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
+                </p>
+              </section>
+        </form>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Quel est votre plat préféré ?</legend>
+                <ul>
+                  <li>
+                    <label for="soupe">Soupe</label>
+                    <input type="radio" id="soupe" name="plat" value="soupe" checked />
+                  </li>
+                  <li>
+                    <label for="curry">Curry</label>
+                    <input type="radio" id="curry" name="plat" value="curry" autofocus />
+                  </li>
+                  <li>
+                    <label for="pizza">Pizza</label>
+                    <input type="radio" id="pizza" name="plat" value="pizza" disabled/>
+                  </li>
+                </ul>
+              </fieldset>
+              <label for="file">Selectionnez une ou plusieur image</label>
+              <input type="file" name="file" id="file" accept="image/*" multiple />
+        </form>
+        <p>
+          <label>
+            Enter your phone number in the format (123) - 456 - 7890 (
+              <input
+              name="tel1"
+              type="tel"
+              pattern="[0-9]{3}"
+              placeholder="###"
+              aria-label="3-digit area code"
+              size="2"
+              maxlength="3" />) -
+            <input
+              name="tel2"
+              type="tel"
+              pattern="[0-9]{3}"
+              placeholder="###"
+              aria-label="3-digit prefix"
+              size="2"
+              maxlength="3" />
+            -
+            <input
+              name="tel3"
+              type="tel"
+              pattern="[0-9]{4}"
+              placeholder="####"
+              aria-label="4-digit number"
+              size="3"
+              maxlength="3" />
+          </label>
+        </p>
+        <form>
+          <div>
+            <label for="uname">Choose a username: </label>
+            <input
+              type="text"
+              id="uname"
+              name="name"
+              required
+              size="45"
+              pattern="[a-z]{4,8}"
+              title="4 to 8 lowercase letters" />
+            <span class="validity"></span>
+            <p>Usernames must be lowercase and 4-8 characters in length.</p>
+          </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

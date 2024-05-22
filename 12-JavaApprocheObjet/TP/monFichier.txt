@@ -1,0 +1,2 @@
+Nom;Marque;Categorie;
+Sirop Fruit de la Passion;La Maison Guiot;Édulcorants;

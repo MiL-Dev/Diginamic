@@ -1,0 +1,17 @@
+section{
+    display: flex;/* Tous les enfants de cette div serons en flex */
+    flex-wrap: wrap; /* permet de repecter la responsitivite */
+    width: 100%;
+    justify-content: space-around;/* permet d'avoir de l'espace entre */
+    
+}
+article{
+    border: 1px solid blue;
+    flex-basis: 30%; /* Donne 30% par block */
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 0;
+    box-sizing: border-box; /* Permet de prendre en compte dans la taille des blocks les margins et padding */
+}
+.h2_test::before{
+    color: blueviolet;
+}

@@ -1,0 +1,30 @@
+body > section > div {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  article {
+    flex-basis: 30%;
+  }
+  article#article3 {
+    order: -1;
+  }
+}
+/* Pseudo element before */
+h1:before {
+  color: blueviolet;
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  z-index: -1000;
+  -webkit-user-select: none;
+}

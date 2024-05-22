@@ -1,0 +1,10 @@
+package fr.diginamic.numeration;
+
+public class TestEnumeration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Saison[] saison = Saison.values();
+	}
+
+}

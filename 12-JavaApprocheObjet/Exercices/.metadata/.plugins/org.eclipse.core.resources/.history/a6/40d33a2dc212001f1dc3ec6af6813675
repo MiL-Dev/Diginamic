@@ -1,0 +1,16 @@
+package fr.diginamic.numeration;
+
+public class TestEnumeration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Saison[] saisons = Saison.values();
+		
+		for(Saison saison : saisons) {
+			System.out.println(saison.getName() + " " + saison.getOrder());
+		}
+		Saison ete = Saison.ETE;
+		System.out.println(ete.toString());
+	}
+
+}

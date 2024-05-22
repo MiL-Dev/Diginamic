@@ -1,0 +1,33 @@
+package fr.diginamic.chaines;
+
+public class TestStringBuilder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		StringBuilder builderNumber = new StringBuilder();
+		String stringNumber = String.format("J'ai %d", 0);
+		long debut = System.currentTimeMillis();
+		
+		
+		
+		
+		
+		for(int i=0; i<100000; i++) {
+			//builder	
+			builderNumber.append(i).append(" "); // 6ms
+			//stringNumber = stringNumber + i; // 2800ms
+			//stringNumber = stringNumber.concat(Integer.toString(i)); // 2800ms
+			//stringNumber = String.format("J'ai %d", i); // 142ms
+		}
+		//builderNumber.toString();
+		// Code à chronométrer
+	
+		long fin = System.currentTimeMillis();
+	
+		System.out.println("Temps écoulé en millisecondes :" + (fin - debut));
+		System.out.println("\n");
+		//System.out.println(builderNumber);
+	}
+
+}

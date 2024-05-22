@@ -1,0 +1,18 @@
+package dates;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class TestCalendar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calendar cal = Calendar.getInstance();
+		cal.set(2016, 4, 19, 23, 59, 30);
+		Date date = cal.getTime();
+		System.out.println(date.getDay() + " " + date.getMonth() + " " + date.getYear());
+		SimpleDateFormat formateur = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	}
+
+}

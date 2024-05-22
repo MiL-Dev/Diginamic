@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+header nav h1 {
+    background: gray;
+    margin: 0 0 10px 0 ;
+    padding: 10px;
+    text-align: center;
+}    
+header nav h1 a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    margin: 10px;
+    list-style-type: none;
+}
+ul li {
+    margin: 10px 5px;
+    display: inline-block;
+}
+label{
+display: block;
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form {
+display:inline-flex;
+margin: 5px;
+}
+form button {
+    margin: 0 15px;
+    background-color: aqua;
+    border-radius: 5px;
+    height: 40px;
+}

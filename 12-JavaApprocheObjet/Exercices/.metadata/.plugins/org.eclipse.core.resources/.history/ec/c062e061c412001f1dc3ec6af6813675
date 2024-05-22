@@ -1,0 +1,6 @@
+package listes;
+
+public enum Continent {
+	EUROPE("Europe"),
+	AFRIQUE("Afrique");
+}

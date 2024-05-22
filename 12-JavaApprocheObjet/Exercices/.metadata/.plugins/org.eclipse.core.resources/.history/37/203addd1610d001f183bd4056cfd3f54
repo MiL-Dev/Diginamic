@@ -1,0 +1,17 @@
+package fichier;
+
+public class Ville {
+	String name;
+	int departement;
+	String nameRegion;
+	int populationTotal;
+	
+	public Ville(String name, int departement, String nameRegion, int populationTotal) {
+		super();
+		this.name = name;
+		this.departement = departement;
+		this.nameRegion = nameRegion;
+		this.populationTotal = populationTotal;
+	}
+	
+}

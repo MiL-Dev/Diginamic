@@ -1,0 +1,32 @@
+CustomFiltersActionGroup.org.eclipse.jdt.ui.PackageExplorer.TAG_DUMMY_TO_TEST_EXISTENCE=storedViewPreferences
+Refactoring.savealleditors=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Locale"/></lhs></history>
+content_assist_number_of_computers=14
+eclipse.preferences.version=1
+lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*,
+markOccurrences=false
+org.eclipse.buildship.ui.packageexplorer.filter.gradle.buildfolder=true
+org.eclipse.buildship.ui.packageexplorer.filter.gradle.subProject=true
+org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
+org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
+org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true
+org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
+org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter=true
+org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter=true
+org.eclipse.jdt.ui.formatterprofiles.version=23
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="gettercomment_context" deleted\="false" description\="Comment for getter method" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.gettercomment" name\="gettercomment">/** Getter for ${bare_field_name}\r\n * @return the ${bare_field_name}\r\n */</template><template autoinsert\="false" context\="settercomment_context" deleted\="false" description\="Comment for setter method" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.settercomment" name\="settercomment">/** Setter for ${bare_field_name}\r\n * @param ${param} the ${bare_field_name} to set\r\n */</template><template autoinsert\="false" context\="constructorcomment_context" deleted\="false" description\="Comment for created constructors" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.constructorcomment" name\="constructorcomment">/** Constructor\r\n * ${tags}\r\n */</template><template autoinsert\="false" context\="fieldcomment_context" deleted\="false" description\="Comment for fields" enabled\="true" id\="org.eclipse.jdt.ui.text.codetemplates.fieldcomment" name\="fieldcomment">/** ${field} */</template></templates>
+org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=windows-1252
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

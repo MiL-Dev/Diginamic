@@ -1,0 +1,14 @@
+{
+  "cars": [
+    {
+      "id": "34f6",
+      "name": "Renault",
+      "modele": "Megane"
+    },
+    {
+      "id": "25f3",
+      "name": "BMW",
+      "modele": "X3"
+    }
+  ]
+}

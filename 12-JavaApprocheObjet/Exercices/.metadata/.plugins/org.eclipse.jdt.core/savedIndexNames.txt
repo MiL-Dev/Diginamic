@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\MiL\Developpement\Formation_Diginamic\12. Java approche objet\Exercices\.metadata\.plugins\org.eclipse.jdt.core
+1550225938.index
+3055715731.index
+529158085.index
+1865797976.index
+2445451569.index
+371624161.index

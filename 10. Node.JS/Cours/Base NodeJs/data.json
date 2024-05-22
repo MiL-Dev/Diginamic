@@ -1,0 +1,78 @@
+{
+    "todos":
+        [
+            {
+                "id": 23,
+                "text":"Faire la vaisselle",
+                "done":true
+            },
+            {
+                "id": 67,
+                "text":"Faire le ménage",
+                "done":false
+            },
+            {
+                "id": 98,
+                "text":"Faire les courses",
+                "done":true
+            },
+            {
+                "id": 3,
+                "text":"Faire la du sport",
+                "done":false
+            }
+        ],
+    "users":
+        [
+            {
+                "id": 1,
+                "name": "Mohamed",
+                "age": "20",
+                "email": "Mohamed@email.fr"
+            },
+            {
+                "id": 2,
+                "name": "Michael",
+                "age": "89",
+                "email": "Michael@email.fr"
+            }
+        ],
+    "products": 
+    [
+        {
+            "id": 39,
+            "name": "coco",
+            "age": "49",
+            "email": "coco@lustre.fr"
+        },
+        {
+            "id": 39,
+            "name": "coco",
+            "age": "49",
+            "email": "coco@lustre.fr"
+        }
+
+    ],
+    "stores":
+    [
+        {
+            "id": 12,
+            "name": "merco",
+            "age": "21",
+            "email": "zaz@loo.fr"  
+        },
+        {
+            "id": 13,
+            "name": "bmw",
+            "age": "35",
+            "email": "zazou@loo.fr"  
+        }
+    ]
+    
+    
+}
+
+
+
+
+

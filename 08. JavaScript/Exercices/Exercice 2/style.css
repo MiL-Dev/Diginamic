@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+section {
+    border: 2px solid black;
+}
+section button {
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+.pValide{
+    text-decoration : line-through;
+}

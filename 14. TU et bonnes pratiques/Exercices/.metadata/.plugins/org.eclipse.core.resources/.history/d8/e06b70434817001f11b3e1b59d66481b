@@ -1,0 +1,10 @@
+package fr.diginamic.enumerations;
+
+public class SaisonTest {
+
+	@Test
+	public void testValueOf() {
+		Saison test1 = new Saison();
+	}
+
+}

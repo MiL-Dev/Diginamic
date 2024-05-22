@@ -1,0 +1,1 @@
+INDEX VERSION 1.134+C:\Users\MiL\Developpement\Formation_Diginamic\11.Java-approche-impérative\Exercices\Java\.metadata\.plugins\org.eclipse.jdt.core

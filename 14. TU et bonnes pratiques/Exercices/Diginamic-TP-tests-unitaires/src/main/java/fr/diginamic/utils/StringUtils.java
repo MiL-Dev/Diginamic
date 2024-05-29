@@ -18,6 +18,9 @@ public final class StringUtils {
 		if(lhs == null) {
 			lhs = "";
 		}
+		if(rhs == null) {
+			rhs = "";
+		}
 		int len0 = lhs.length() + 1;
 		int len1 = rhs.length() + 1;
 
@@ -31,9 +34,10 @@ public final class StringUtils {
 
 		for (int j = 1; j < len1; j++) {
 			newcost[0] = j;
-
+			
 			for (int i = 1; i < len0; i++) {
-				int match = (lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1;
+				//ajout de Character.toLowerCase() pour mettre chaque lettre tester en miniscule avant le test
+				int match = (Character.toLowerCase(lhs.charAt(i - 1)) == Character.toLowerCase(rhs.charAt(j - 1))) ? 0 : 1;
 
 				int costReplace = cost[i - 1] + match;
 				int costInsert = cost[i] + 1;

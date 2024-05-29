@@ -1,0 +1,39 @@
+package fr.diginamic.immobilier.entites;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MaisonTest {
+
+
+	@Test
+	void testAjouterPiece() {
+		Maison mais1 = new Maison();
+		Chambre chambre = new Chambre(0, 20);
+		mais1.ajouterPiece(chambre);
+		
+		assertEquals(1,)
+	}
+
+	@Test
+	void testNbPieces() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSuperficieEtage() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSuperficieTypePiece() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCalculerSurface() {
+		fail("Not yet implemented");
+	}
+
+}

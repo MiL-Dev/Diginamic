@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MaisonTest.testSuperficieEtage" project="Diginamic-TP-tests-unitaires" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="fr.diginamic.immobilier.entites.MaisonTest" time="0.01" displayname="MaisonTest" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.immobilier.entites.MaisonTest]">
+    <testcase name="testSuperficieEtage" classname="fr.diginamic.immobilier.entites.MaisonTest" time="0.01" displayname="testSuperficieEtage()" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.immobilier.entites.MaisonTest]/[method:testSuperficieEtage()]"/>
+  </testsuite>
+</testrun>

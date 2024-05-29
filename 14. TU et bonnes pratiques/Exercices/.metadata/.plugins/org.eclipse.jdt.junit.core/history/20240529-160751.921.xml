@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StringUtilsTest" project="Diginamic-TP-tests-unitaires" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="fr.diginamic.utils.StringUtilsTest" time="0.014" displayname="StringUtilsTest" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.utils.StringUtilsTest]">
+    <testcase name="testLevenshteinDistance" classname="fr.diginamic.utils.StringUtilsTest" time="0.014" displayname="testLevenshteinDistance()" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.utils.StringUtilsTest]/[method:testLevenshteinDistance()]"/>
+  </testsuite>
+</testrun>

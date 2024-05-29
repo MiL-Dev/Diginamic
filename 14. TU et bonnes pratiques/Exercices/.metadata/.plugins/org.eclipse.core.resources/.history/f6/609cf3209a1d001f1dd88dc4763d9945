@@ -1,0 +1,10 @@
+package ex2;
+
+public class TestCompte {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CompteCourant compteCourant = new CompteCourant()
+	}
+
+}

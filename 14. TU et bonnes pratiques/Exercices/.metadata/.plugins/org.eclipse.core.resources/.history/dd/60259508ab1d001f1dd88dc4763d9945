@@ -1,0 +1,71 @@
+package ex3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Représente une zone d'un zoo
+ */
+public abstract class Zone {
+	
+	/** Liste des animaux de la zone */
+	private List<Animal> animaux;
+
+	/** Constructeur
+	 * 
+	 */
+	public Zone() {
+		this.animaux = new ArrayList<>();
+	}
+	
+	/** La zone contrôle si elle accepte ou non l'animal passé en paramètre.
+	 * Le résultat fourni est basé sur la catégorie de l'animal et son régime alimentaire.
+	 * Chaque classe fille fournit son propre algorithme
+	 * @param animal animal
+	 * @return boolean
+	 */
+	public abstract boolean accept(Animal animal);
+	
+	/** Liste des animaux de la zone
+	 * @param animal animal
+	 */
+	public void addAnimal(Animal animal) {
+		animaux.add(animal);
+	}
+	
+	/**
+	 * Affiche tous les animaux de la zone
+	 */
+	public void afficherListeAnimaux(){
+		System.out.println(this.getClass().getSimpleName()+":");
+		animaux.forEach(a -> System.out.println(a.toString()));
+		System.out.println();
+	}
+	
+	/**
+	 * Calcule le poids indicatif de nourriture consommé chaque jour par les animaux
+	 */
+	public double calculerKgsNourritureParJour(){
+		return animaux.size() * getPoidsMoyenConsoNourriture();
+	}
+	
+	/**
+	 * Retourne le poids moyen de nourriture consommé chaque jour par 1 animal
+	 */
+	public abstract double getPoidsMoyenConsoNourriture();
+
+	/** Getter pour animaux
+	 * @return the animaux
+	 */
+	public List<Animal> getAnimaux() {
+		return animaux;
+	}
+
+	/** Setter pour animaux
+	 * @param animaux the animaux to set
+	 */
+	public void setAnimaux(List<Animal> animaux) {
+		this.animaux = animaux;
+	}
+
+}

@@ -1,0 +1,14 @@
+package fr.diginamic.enumerations;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SaisonTest {
+
+	@Test
+	void testValueOfLibelle() {
+		fail("Not yet implemented");
+	}
+
+}

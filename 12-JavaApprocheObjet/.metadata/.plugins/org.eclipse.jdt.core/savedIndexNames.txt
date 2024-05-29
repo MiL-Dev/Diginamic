@@ -1,2 +1,0 @@
-INDEX VERSION 1.134+C:\Users\MiL\Developpement\Formation_Diginamic\12. Java approche objet\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index

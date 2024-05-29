@@ -1,5 +1,0 @@
-package fr.diginamic.recensement.exception;
-
-public class RecensementExeption extends Exception {
-	
-}

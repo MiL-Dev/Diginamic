@@ -1,0 +1,37 @@
+package ex2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CompteTest {
+
+	@Test
+	void testCompte() {
+		CompteCourant comptCourant = new CompteCourant(200, 500);
+		
+		comptCourant.ajouterMontant(100);
+		comptCourant.debiterMontant(50);
+
+		comptCourant.debiterMontant(100);
+		assertEquals(150, comptCourant.getSolde());
+		
+		comptCourant.debiterMontant(5000);
+	}
+	
+	@Test
+	void testLivretA() {
+		LivretA livretA = new LivretA(100, 10);
+		System.out.println(livretA.getSolde());
+		livretA.ajouterMontant(100);
+		System.out.println(livretA.getSolde());
+		livretA.debiterMontant(100);
+		System.out.println(livretA.getSolde());
+		
+		livretA.debiterMontant(5000);
+		System.out.println(livretA.getSolde());
+		livretA.appliquerRemuAnnuelle();
+		System.out.println(livretA.getSolde());
+	}
+
+}

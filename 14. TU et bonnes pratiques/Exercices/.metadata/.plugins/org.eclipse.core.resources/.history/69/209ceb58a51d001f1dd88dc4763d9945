@@ -1,0 +1,62 @@
+package ex2;
+
+/**
+ * Représente un Livret A
+ * 
+ * @author RichardBONNAMY
+ *
+ */
+public class LivretA extends CompteBancaire {
+
+	/** tauxRemuneration : taux de rémunération en % dans le cas d'un livret A */
+	private double tauxRemuneration;
+
+	/**
+	 * Constructeur
+	 * 
+	 * @param solde            solde du compte
+	 * @param tauxRemuneration taux de rémunération en %
+	 */
+	public LivretA(double solde, double tauxRemuneration) {
+		super(solde, 0);
+		this.tauxRemuneration = tauxRemuneration;
+	}
+
+	/**
+	 * Ajoute un montant au solde
+	 * 
+	 * @param montant montant
+	 */
+	public void debiterMontant(double montant) {
+		if (montant > super.solde) {
+			this.solde = solde - montant;
+		}
+	}
+
+	/**
+	 * Méthode qui permet de calculer la rémunération annuelle du compte
+	 * 
+	 */
+	public void appliquerRemuAnnuelle() {
+		this.solde = solde + solde * tauxRemuneration / 100;
+	}
+
+	/**
+	 * Getter for tauxRemuneration
+	 * 
+	 * @return the tauxRemuneration
+	 */
+	public double getTauxRemuneration() {
+		return tauxRemuneration;
+	}
+
+	/**
+	 * Setter
+	 * 
+	 * @param tauxRemuneration the tauxRemuneration to set
+	 */
+	public void setTauxRemuneration(double tauxRemuneration) {
+		this.tauxRemuneration = tauxRemuneration;
+	}
+
+}

@@ -1,0 +1,16 @@
+package ex5;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inventaire inv = new Inventaire();
+		inv.addItem(new Item("Stylo", 0.05));
+		inv.addItem(new Item("Chaise", 6));
+		inv.addItem(new Item("Vase", 3.25));
+		inv.addItem(new Item("Bureau", 25));
+		
+		System.out.println(inv);
+	}
+
+}

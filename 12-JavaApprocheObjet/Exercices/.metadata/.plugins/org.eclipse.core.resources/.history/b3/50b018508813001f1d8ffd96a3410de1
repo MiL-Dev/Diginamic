@@ -1,7 +1,0 @@
-package fr.diginamic.recensement.exception;
-
-import java.lang.Object.Exception;
-
-public class RecensementException extends Exception {
-
-}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CompteCourantTest" project="Diginamic-java-TP-code-propre" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="ex2.CompteCourantTest" time="0.009" displayname="CompteCourantTest" uniqueid="[engine:junit-jupiter]/[class:ex2.CompteCourantTest]">
+    <testcase name="testDebiterMontant" classname="ex2.CompteCourantTest" time="0.009" displayname="testDebiterMontant()" uniqueid="[engine:junit-jupiter]/[class:ex2.CompteCourantTest]/[method:testDebiterMontant()]"/>
+  </testsuite>
+</testrun>

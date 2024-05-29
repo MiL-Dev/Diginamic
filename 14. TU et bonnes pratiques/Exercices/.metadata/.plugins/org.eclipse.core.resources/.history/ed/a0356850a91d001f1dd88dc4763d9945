@@ -1,0 +1,32 @@
+package ex2;
+
+/**
+ * Représente un compte de dépôt courant
+ * 
+ * @author RichardBONNAMY
+ *
+ */
+public class CompteCourant extends CompteBancaire {
+
+	/**
+	 * Constructeur
+	 * 
+	 * @param solde     solde
+	 * @param decouvert découvert autorisé
+	 */
+	public CompteCourant(double solde, double decouvert) {
+		super(solde, decouvert);
+	}
+
+	@Override
+	public void debiterMontant(double montant) {
+		//modification de la condition if
+		if (montant < this.solde + this.decouvert) {
+			System.out.println("if");
+			this.solde = solde - montant;
+		}else {
+			System.out.println("Vous ne pouvez pas retirer cette somme car cela depasse votre decouvert");
+		}
+	}
+
+}

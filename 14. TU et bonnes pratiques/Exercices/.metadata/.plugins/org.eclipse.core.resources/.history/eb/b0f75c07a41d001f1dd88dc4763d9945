@@ -1,0 +1,26 @@
+package ex2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CompteTest {
+
+	@Test
+	void testCompte() {
+		CompteCourant comptCourant = new CompteCourant(200, 1000);
+		
+		comptCourant.ajouterMontant(100);
+		comptCourant.debiterMontant(50);
+		System.out.println(comptCourant.getDecouvert());
+		System.out.println(comptCourant.getSolde());
+		comptCourant.debiterMontant(100);
+		assertEquals(150, comptCourant.getSolde());
+	}
+	
+	@Test
+	void testLivretA() {
+		LivretA livretA = new LivretA(100, 0);
+	}
+
+}

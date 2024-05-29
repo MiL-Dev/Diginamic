@@ -1,0 +1,14 @@
+package ex2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CompteCourantTest {
+
+	@Test
+	void testDebiterMontant() {
+		CompteCourant cmptCourant = new CompteCourant(200, 1000);
+	}
+
+}

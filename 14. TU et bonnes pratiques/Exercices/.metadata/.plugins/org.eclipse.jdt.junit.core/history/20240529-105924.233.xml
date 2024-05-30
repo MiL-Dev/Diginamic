@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="SaisonTest" project="Diginamic-TP-tests-unitaires" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="fr.diginamic.enumerations.SaisonTest" time="0.001" displayname="SaisonTest" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.enumerations.SaisonTest]">
-    <testcase name="testValueOfLibelle" classname="fr.diginamic.enumerations.SaisonTest" time="0.001" displayname="testValueOfLibelle()" uniqueid="[engine:junit-jupiter]/[class:fr.diginamic.enumerations.SaisonTest]/[method:testValueOfLibelle()]"/>
-  </testsuite>
-</testrun>

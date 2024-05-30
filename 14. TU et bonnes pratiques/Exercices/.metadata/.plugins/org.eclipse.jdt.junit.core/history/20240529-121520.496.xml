@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="CompteTest.testCompte" project="Diginamic-java-TP-code-propre" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="ex2.CompteTest" time="0.011" displayname="CompteTest" uniqueid="[engine:junit-jupiter]/[class:ex2.CompteTest]">
-    <testcase name="testCompte" classname="ex2.CompteTest" time="0.011" displayname="testCompte()" uniqueid="[engine:junit-jupiter]/[class:ex2.CompteTest]/[method:testCompte()]"/>
-  </testsuite>
-</testrun>

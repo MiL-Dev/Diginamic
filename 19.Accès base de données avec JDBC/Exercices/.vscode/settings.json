@@ -1,0 +1,6 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.view": "hierarchical",
+    "redHatDependencyAnalytics.go.executable.path": "/tmp/redhatDependencyAnalyticsReport.html",
+    "redhat.telemetry.enabled": true
+}

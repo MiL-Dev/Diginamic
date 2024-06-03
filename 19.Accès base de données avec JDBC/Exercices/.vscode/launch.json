@@ -1,0 +1,21 @@
+{
+    "configurations":[
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "fr.diginamic.Main",
+            "projectName": "jdbc"
+        },
+        {
+            "name": "Attach to Chrome",
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "vmArgs": "-Xms<1> -Xmx<1> -D<file.encoding>=<UTF-8>)"
+        }
+    ]
+}

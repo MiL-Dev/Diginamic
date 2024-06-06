@@ -38,6 +38,7 @@ public class AppJpa {
 		client1.setBanque(banque1);
 		
 		banque1.setClient(clients);
+		
 		transaction.begin();
 		em.persist(banque1);
 		em.persist(client1);

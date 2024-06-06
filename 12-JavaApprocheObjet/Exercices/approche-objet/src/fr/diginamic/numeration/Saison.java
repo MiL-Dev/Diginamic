@@ -26,12 +26,6 @@ public enum Saison {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
 	public String getName() {
 		return name;
 	}

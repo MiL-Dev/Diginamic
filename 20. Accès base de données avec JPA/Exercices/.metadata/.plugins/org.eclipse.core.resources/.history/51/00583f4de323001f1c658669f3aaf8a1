@@ -1,0 +1,21 @@
+package entities;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Produit {
+	
+	@Id
+	private int id;
+	private Categorie categorie;
+	private Marque marque;
+	private String scoreNutritionnel;
+	private String valeurNutritionnel;
+	private List<Ingredient> ingredients;
+	private List<allergene> allergenes;
+	private List<additif> additifs;
+	
+}

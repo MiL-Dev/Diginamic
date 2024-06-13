@@ -1,0 +1,68 @@
+package fileToDb;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import entities.Additif;
+import entities.Allergene;
+import entities.Categorie;
+import entities.Ingredient;
+import entities.Marque;
+import entities.Produit;
+
+public class app {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Path path = Paths.get("C:\\Users\\MiL\\Developpement\\Formation_Diginamic\\20. Accès base de données avec JPA\\TP\\open-food-facts.csv");
+		List<String> lines = Files.readAllLines(path);
+		
+		String linesColumns = lines.remove(0);
+		System.out.println(linesColumns);
+		
+		
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("filecsv_to_db");
+		EntityManager em = entityManagerFactory.createEntityManager();
+		EntityTransaction transaction= em.getTransaction();
+		
+		
+//		Query query = em.createQuery("SELECT p FROM Person p WHERE p.name= :name");
+//		query.setParameter("name", "Doe");
+		
+		
+		
+//		28 29
+		
+		for(String line : lines) {
+			String[] elements = line.split("\\|", -1);//-1 permet de ne pas ignorer les cellules vides separer par |
+			Categorie categorie = new Categorie(elements[0]);
+			Marque marque = new Marque(elements[1]);
+			Ingredient ingredient = new Ingredient(elements[4]);
+			Allergene allergene = new Allergene(elements[28]);
+			Additif additif = new Additif(elements[29]);
+			
+			Set<Ingredient> ingredients = new HashSet();
+			ingredients.add(ingredient);
+			
+			Set<Allergene> allergenes = new HashSet();
+			Produit produit = new Produit(categorie, marque,elements[3],elements[5],ingredients,);
+			
+		}
+		transaction.begin();
+		
+		
+		transaction.commit();
+		em.close();
+	}
+
+}

@@ -1,0 +1,11 @@
+package entities;
+
+public class Produit {
+	private String categorie;
+	private String marque;
+	private String grade;
+	private String donnee;
+	private List<Ingredient> ingredients;
+	private List<allergene> allergenes;
+	private List<additif> additifs;
+}

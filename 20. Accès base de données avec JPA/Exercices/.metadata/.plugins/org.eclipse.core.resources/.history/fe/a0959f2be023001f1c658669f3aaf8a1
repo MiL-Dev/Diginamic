@@ -1,0 +1,14 @@
+package entities;
+
+import java.util.List;
+
+public class Produit {
+	
+	private String categorie;
+	private String marque;
+	private String scoreNutritionnel;
+	private String valeurNutritionnel;
+	private List<Ingredient> ingredients;
+	private List<allergene> allergenes;
+	private List<additif> additifs;
+}

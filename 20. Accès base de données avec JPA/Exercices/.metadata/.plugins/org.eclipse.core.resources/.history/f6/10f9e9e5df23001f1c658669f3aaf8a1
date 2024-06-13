@@ -1,0 +1,7 @@
+package entities;
+
+@Entity
+public class Ingredient {
+	@Id
+	private int id;
+}

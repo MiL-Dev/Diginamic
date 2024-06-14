@@ -1,3 +1,7 @@
 #.\"16. MAVEN"\Exercices\premier-projet-maven\target
-*/target/* 
+**/bootstrapsass/*
+**/fontello/*
+**/target/* 
 #All repository target is delete
+**/package-lock.json
+**/.metadata/*

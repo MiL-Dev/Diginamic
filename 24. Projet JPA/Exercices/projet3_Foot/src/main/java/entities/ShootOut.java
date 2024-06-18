@@ -1,15 +1,13 @@
 package entities;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 @Entity
 public class ShootOut {
@@ -22,11 +20,28 @@ public class ShootOut {
 	@JoinColumn(name="team_id")
 	private Team winner;
 	
-	@OneToMany(mappedBy= "shootOut")
-	private Set<MatchFoot> matchs = new HashSet<>();
+	@OneToOne(mappedBy= "shootOut")
+	private MatchFoot match;
 
 	public ShootOut() {
 		super();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(match);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ShootOut other = (ShootOut) obj;
+		return Objects.equals(match, other.match);
 	}
 
 	public Team getWinner() {
@@ -37,11 +52,19 @@ public class ShootOut {
 		this.winner = winner;
 	}
 
-	public Set<MatchFoot> getMatchs() {
-		return matchs;
+	public MatchFoot getMatch() {
+		return match;
 	}
 
-	public void setMatchs(Set<MatchFoot> matchs) {
-		this.matchs = matchs;
+	public void setMatch(MatchFoot match) {
+		this.match  = match;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 }

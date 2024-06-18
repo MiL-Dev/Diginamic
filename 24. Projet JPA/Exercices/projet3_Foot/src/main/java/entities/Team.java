@@ -1,8 +1,10 @@
 package entities;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -33,6 +35,28 @@ public class Team {
 		super();
 	}
 
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", name=" + name + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Team other = (Team) obj;
+		return Objects.equals(name, other.name);
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -61,8 +85,8 @@ public class Team {
 		return players;
 	}
 
-	public void setPlayers(Set<Player> players) {
-		this.players = players;
+	public void setPlayers(Player player) {
+		this.players.add(player);
 	}
 
 	public Set<ShootOut> getShootOuts() {
@@ -71,6 +95,14 @@ public class Team {
 
 	public void setShootOuts(Set<ShootOut> shootOuts) {
 		this.shootOuts = shootOuts;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 }

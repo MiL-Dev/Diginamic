@@ -2,6 +2,7 @@ package entities;
 
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -10,13 +11,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
 
 @Entity
 public class MatchFoot {
 	
+	@Override
+	public String toString() {
+		return "MatchFoot [date=" + date + ", home=" + home + ", away=" + away + "]";
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
@@ -41,14 +48,10 @@ public class MatchFoot {
 	@Column(name="away_score")
 	private int awayScore;
 	
-	@ManyToMany
-	@JoinTable(name="match_goal",
-	joinColumns= @JoinColumn(name="id_match", referencedColumnName="id"),
-	inverseJoinColumns= @JoinColumn(name="id_goal", referencedColumnName="id")
-	)
+	@OneToMany(mappedBy="match")
 	private Set<GoalScorer> goalScorers = new HashSet<>();
 	
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name="shoot_id")
 	ShootOut shootOut;
 	
@@ -58,6 +61,23 @@ public class MatchFoot {
 
 	public MatchFoot() {
 		super();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(away, date, home);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		MatchFoot other = (MatchFoot) obj;
+		return Objects.equals(away, other.away) && Objects.equals(date, other.date) && Objects.equals(home, other.home);
 	}
 
 	public LocalDate getDate() {
@@ -112,8 +132,8 @@ public class MatchFoot {
 		return goalScorers;
 	}
 
-	public void setGoalScorers(Set<GoalScorer> goalScorers) {
-		this.goalScorers = goalScorers;
+	public void setGoalScorers(GoalScorer goalScorers) {
+		this.goalScorers.add(goalScorers);
 	}
 
 	public ShootOut getShootOut() {

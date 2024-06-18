@@ -1,8 +1,10 @@
 package entities;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.Cascade;
 
 @Entity
 public class Player {
@@ -21,7 +25,7 @@ public class Player {
 	private String name;
 	
 	@ManyToOne
-	@JoinColumn(name="id_team")
+	@JoinColumn(name="team_id")
 	private Team team;
 	
 	@OneToMany(mappedBy="player")
@@ -29,6 +33,23 @@ public class Player {
 
 	public Player() {
 		super();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Player other = (Player) obj;
+		return Objects.equals(name, other.name);
 	}
 
 	public String getName() {
@@ -51,7 +72,7 @@ public class Player {
 		return goalScorers;
 	}
 
-	public void setGoalScorers(Set<GoalScorer> goalScorers) {
-		this.goalScorers = goalScorers;
+	public void setGoalScorers(GoalScorer goalScorers) {
+		this.goalScorers.add(goalScorers);
 	}
 }

@@ -202,8 +202,8 @@ public class AddData {
 				GoalScorer gS = new GoalScorer();
 				Player pl = new Player();
 				Team team = null;
-
-				if (elements[3] == elements[1]) {
+				
+				if (elements[3].equals(elements[1]) ) {
 					team = m.getHome();
 				} else {
 					team = m.getAway();
@@ -231,10 +231,8 @@ public class AddData {
 				gS.setTeam(team);
 				pl.setGoalScorers(gS);
 				m.setGoalScorers(gS);
-
 				goalScorers.add(gS);
 				players.add(pl);
-				matchs.add(m);
 			}
 //			System.out.println(elements[0]); // colonne 1 les dates
 		}

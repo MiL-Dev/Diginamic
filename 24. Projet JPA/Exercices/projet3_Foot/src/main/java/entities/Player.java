@@ -52,6 +52,11 @@ public class Player {
 		return Objects.equals(name, other.name);
 	}
 
+	@Override
+	public String toString() {
+		return "Player id=" + id + ", name=" + name;
+	}
+
 	public String getName() {
 		return name;
 	}

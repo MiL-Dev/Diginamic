@@ -1,0 +1,6 @@
+[{"date":"19/11/2020 12:30:30", "montant":10.9, "type":"DEBIT"},
+ {"date":"19/11/2020 18:25:09", "montant":65.95, "type":"DEBIT"},
+ {"date":"19/11/2020 21:45:57", "montant":39.5, "type":"DEBIT"},
+ {"date":"20/11/2020 08:27:14", "montant":3.70, "type":"DEBIT"},
+ {"date":"20/11/2020 15:32:41", "montant":25.0, "type":"CREDIT"},
+ {"date":"27/11/2020 16:08:17", "montant":2150.0, "type":"CREDIT"}]

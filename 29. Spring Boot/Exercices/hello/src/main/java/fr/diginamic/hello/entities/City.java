@@ -73,5 +73,11 @@ public class City {
 	public void setId(int id) {
 		this.id = id;
 	}
+	public Department getDepartment() {
+		return department;
+	}
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
 	
 }

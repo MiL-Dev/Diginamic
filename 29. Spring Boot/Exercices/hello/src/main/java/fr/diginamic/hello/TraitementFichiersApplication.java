@@ -55,7 +55,7 @@ public class TraitementFichiersApplication implements CommandLineRunner {
 			if (nbHabs == 0) {
 				nbHabs = 1;
 			}
-			Department department = new Department(elements[0]);
+			Department department = new Department(elements[2]);
 
 			if (!departments.contains(department)) {
 				departments.add(department);
@@ -68,10 +68,14 @@ public class TraitementFichiersApplication implements CommandLineRunner {
 				}
 			}
 			City city = new City(elements[6], nbHabs, department);
-			if (!cities.contains(city)) {
-				cities.add(city);
-				cityService.addVille(city);
+			if(nbHabs > 100000) {
+				if (!cities.contains(city)) {
+					
+					cities.add(city);
+					cityService.addVille(city);
+				}
 			}
+			
 		}
 	}
 }

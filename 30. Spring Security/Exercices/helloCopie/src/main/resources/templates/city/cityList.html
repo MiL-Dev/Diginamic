@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Liste des villes</title>
+  </head>
+  	<body>
+  <div class="table-responsive">
+	<p>
+		<h3>Profil utilisateur</h3>
+		<ul>
+			<li th:text="'Username : '+ ${authentication.name}">UserName NomParDefaut</li>
+			<li th:text="'Authorities : '+ ${authentication.authorities}">List des authorities</li>
+		</ul>
+	</p>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Ville</th>
+        <th>Nombre d'habitants</th>
+        <th>Code département</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="city:${cities}">
+        <td th:text="${city.name}"></td>
+        <td th:text="${city.population}"></td>
+        <td th:text="${city.department.code}"></td>
+        <td><a th:href="@{'/deleteCity/' + ${city.id}}">Delete</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+	</body>
+</html>
